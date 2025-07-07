@@ -1,0 +1,10 @@
+/*element selector*/
+<style p {
+    color: burlywood;
+}
+
+/*group selector*/
+<style h4,
+h5 {
+    color: rgb(0, 202, 17);
+}
