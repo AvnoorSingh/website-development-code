@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: rgb(203, 222, 95);
+        }
+
+        h1 {
+            color: rgb(231, 17, 17);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        h3 {
+            color: rgb(43, 62, 240);
+            font-family: cursive
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Find Thier Age Using JavaScript ⚽!</h1>
+    <h3 id="player1"></h3>
+    <h3 style="color: palevioletred; font-family: 'Times New Roman', Times, serif;" id="player2"></h3>
+    <h3 style="color: rgb(8, 104, 23); font-family:Verdana, Geneva, Tahoma, sans-serif" id="player3"></h3>
+    <script>
+        class player {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            age() {
+                let date = new Date
+                return date.getFullYear() - this.year
+            }
+        }
+        player1 = new player("Cristiano Ronaldo", 1985)
+        document.getElementById("player1").innerHTML =
+            "Hi! My name is " + player1.name + ". I was born in " + player1.year + " and I am " + player1.age() + " years old."
+
+        player2 = new player("Lionel Messi", 1987)
+        document.getElementById("player2").innerHTML =
+            "Hi! My name is " + player2.name + ". I was born in " + player2.year + " and I am " + player2.age() + " years old."
+
+        player3 = new player("Kylian Mbappe", 1998)
+        document.getElementById("player3").innerHTML =
+            "Hi! My name is " + player3.name + ". I was born in " + player3.year + " and I am " + player3.age() + " years old."
+
+
+
+    </script>
+</body>
+
+</html>
