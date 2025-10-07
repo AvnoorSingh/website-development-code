@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        h1 {
+            color: chocolate;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        h3 {
+            color: rgb(43, 62, 240);
+            font-family: cursive
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Get Your Age Using JavaScript!</h1>
+    <h3 id="student1"></h3>
+    <h3 style="color: palevioletred; font-family: 'Times New Roman', Times, serif;" id="student2"></h3>
+    <script>
+        class student {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            age() {
+                let date = new Date
+                return date.getFullYear() - this.year
+            }
+        }
+        student1 = new student("Avnoor", 2012)
+        document.getElementById("student1").innerHTML =
+            "Hi! My name is " + student1.name + ". I was born in " + student1.year + " and I am " + student1.age() + " years old."
+
+        student2 = new student("John", 2007)
+        document.getElementById("student2").innerHTML =
+            "Hi! My name is " + student2.name + ". I was born in " + student2.year + " and I am " + student2.age() + " years old."
+
+
+    </script>
+</body>
+
+</html>
