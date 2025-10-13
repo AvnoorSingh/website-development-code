@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:aqua; font-family:'Times New Roman', Times, serif; text-align: center">Multiply the arrays by 26
+    </h1>
+    <h3 style="color:azure; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" id="product"></h3>
+    <script>
+        var numbers = [3, 6, 9, 79];
+        function myFunction(num) {
+            return num * 26;
+
+        }
+        var newarray = numbers.map(myFunction)
+        document.getElementById("product").innerHTML = newarray
+    </script>
+</body>
+
+</html>
