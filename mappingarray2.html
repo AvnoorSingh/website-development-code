@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: rgb(81, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:rgb(255, 0, 0); font-family:'Times New Roman', Times, serif; text-align: center"><u><b>Divide the
+                arrays by 5
+            </b></u></h1>
+    <h3 style="color:rgb(0, 9, 173); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" id="product"></h3>
+    <script>
+        var numbers = [10, 95, 880, 7905];
+        function myFunction(num) {
+            return num / 5;
+
+        }
+        var newarray = numbers.map(myFunction)
+        document.getElementById("product").innerHTML = newarray
+    </script>
+</body>
+
+</html>
