@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: cornflowerblue;
+        }
+
+        h1 {
+            color: aliceblue;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        h3 {
+            color: rgb(168, 12, 12);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>In JS, JSON converts the object into a string and sends it to the server. eg:-</h1>
+    <h3 id="result"></h3>
+    <script>
+        var myObj = { name: "Avnoor", age: 13, Grade: 9 };
+        var myJSON = JSON.stringify(myObj);
+        var newObj = JSON.parse(myJSON);
+        document.getElementById("result").innerHTML = newObj.age;
+    </script>
+</body>
+
+</html>
