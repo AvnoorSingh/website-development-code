@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <title>
+        Our first website
+    </title>
+    <style>
+        img {
+
+            display: block;
+
+            margin-top: 250px;
+
+            margin-right: auto;
+
+            width: 300px;
+
+        }
+
+        button {
+            outline-color: yellow;
+            color: yellow;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body style="background-image:linear-gradient(grey,black)">
+    <div id="about" class="container about p-5">
+        <div class="row">
+            <div class="col-6">
+
+                <img src="data:image/jpeg;base64,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"
+                    class="img-fluid">
+            </div>
+            <div class="col-6 pl-5 pt-5 pb-5 text-yellow">
+                <b>
+                    <h1 style="color: yellow; font-family: Arial, Helvetica, sans-serif; text-align: center;"><u>About
+                            Our Cars</u>🏎️</h1>
+                </b>
+                <p style="color: rgb(0, 255, 0);">Lamborghini is an Italian luxury sports car manufacturer known for its
+                    bold design, powerful engines, and exceptional
+                    performance. Founded in 1963 by Ferruccio Lamborghini, the brand was created to rival Ferrari.
+                    Lamborghini cars are
+                    famous for their distinctive styling, featuring sharp lines, aerodynamic shapes, and iconic scissor
+                    doors. The company’s
+                    headquarters and production plant are located in Sant’Agata Bolognese, Italy, where some of the
+                    world’s most admired
+                    supercars are handcrafted.</p>
+                <p style="color: orange;">Over the years, Lamborghini has produced legendary models such as the Miura,
+                    Countach, Aventador, and Huracán. Each
+                    model reflects the brand’s passion for speed, innovation, and luxury. Today, Lamborghini combines
+                    cutting-edge
+                    technology with traditional Italian craftsmanship, using lightweight materials and advanced engines
+                    to deliver thrilling
+                    driving experiences. Beyond cars, the brand has also expanded into SUVs with the Urus, blending
+                    performance and
+                    practicality while maintaining its signature style.</p>
+                <button>Learn More</button>
+
+
+</body>
