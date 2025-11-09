@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <title>
+        Our first website
+    </title>
+    <style>
+        img {
+
+            display: block;
+
+            margin-top: 250px;
+
+            margin-right: auto;
+
+            width: 300px;
+
+        }
+
+        button {
+            outline-color: yellow;
+            color: yellow;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body style="background-image:linear-gradient(rgb(218, 242, 0),rgb(81, 255, 0))">
+    <div id="about" class="container about p-5">
+        <div class="row">
+            <div class="col-6">
+
+                <img src="data:image/jpeg;base64,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"
+                    class="img-fluid">
+            </div>
+            <div class="col-6 pl-5 pt-5 pb-5 text-yellow">
+                <b>
+                    <h1 style="color: rgb(90, 43, 43); font-family: Arial, Helvetica, sans-serif; text-align: center;">
+                        <u>About
+                            Our Cafe</u>☕</h1>
+                </b>
+                <p style="color: rgb(81, 28, 28);">A café is a cozy and inviting place where people come together to
+                    enjoy freshly brewed coffee, light snacks, and
+                    pleasant conversations. The aroma of roasted coffee beans fills the air, creating a warm and
+                    relaxing atmosphere. Many
+                    cafés feature comfortable seating, soft music, and artistic décor that make them ideal for both
+                    social gatherings and
+                    quiet moments alone. They often serve a variety of beverages, from cappuccinos and lattes to teas
+                    and smoothies, along
+                    with pastries, sandwiches, and desserts.</p>
+                <p style="color: rgb(255, 0, 0);">A café is a cozy and inviting place where people come together to
+                    enjoy freshly brewed coffee, light snacks, and
+                    pleasant conversations. The aroma of roasted coffee beans fills the air, creating a warm and
+                    relaxing atmosphere. Many
+                    cafés feature comfortable seating, soft music, and artistic décor that make them ideal for both
+                    social gatherings and
+                    quiet moments alone. They often serve a variety of beverages, from cappuccinos and lattes to teas
+                    and smoothies, along
+                    with pastries, sandwiches, and desserts.</p>
+                <button>Learn More</button>
+
+
+</body>
